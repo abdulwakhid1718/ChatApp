@@ -1,0 +1,28 @@
+.formWrapper{
+    display: flex;
+    background-color: #A8BCFF;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px 30px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+        width: 100%;
+        
+        input {
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+            border-bottom: 1px solid #fff;
+        &::placeholder{
+            color: #fff;
+        }
+        }
+    }
+}
