@@ -217,14 +217,14 @@ input:focus {
   overflow-y: scroll;
 }
 
-.message {
+.messageList {
   display: flex;
   padding: 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   align-items: center;
 }
 
-.message:hover {
+.messageList:hover {
   background-color: #2e3151;
 }
 
@@ -268,6 +268,74 @@ input:focus {
 .userInfo .imgUser {
   height: 40px;
   width: 40px;
+}
+
+.messages {
+  background: #ddddf7;
+  padding: 10px;
+  height: calc(100% - 160px);
+}
+
+.input {
+  height: 50px;
+  background: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input input {
+  background: #fff;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  font-size: 16px;
+  &::placeholder {
+    color: lightgray;
+  }
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.send i {
+  font-size: 20px;
+}
+
+.send button {
+  border: none;
+  border-radius: 3px;
+  padding: 8px 14px;
+  color: white;
+}
+
+.send button i {
+  font-size: 16px;
+}
+
+.messages,
+.input {
+  color: #000;
+}
+
+.message {
+  display: flex;
+  gap: 20px;
+}
+
+.messageInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.messageContent img {
+  width: 50%;
 }
 
 @media (prefers-color-scheme: light) {

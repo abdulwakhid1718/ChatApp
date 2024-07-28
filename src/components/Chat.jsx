@@ -1,4 +1,6 @@
 import React from 'react'
+import Messages from './Messages'
+import Input from './Input'
 
 const Chat = () => {
   return (
@@ -12,6 +14,8 @@ const Chat = () => {
                 <i class="bi bi-camera-video-fill"></i>
             </div>
         </div>
+        <Messages/>
+        <Input/>
     </div>
   )
 }

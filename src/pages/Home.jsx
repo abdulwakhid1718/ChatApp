@@ -5,7 +5,7 @@ import Sidebar from "../components/Sidebar"
 const Home = () => {
     return (
         <div className="homeWrapper">
-            <Sidebar />
+            {/* <Sidebar /> */}
             <Chat />
         </div>
     )
